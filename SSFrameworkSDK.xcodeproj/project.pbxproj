@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3F9A25AE2637FB650036112B /* SSFrameworkSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9A25AC2637FB650036112B /* SSFrameworkSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9A25BA2637FBCA0036112B /* Haha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A25B92637FBCA0036112B /* Haha.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F9A25A92637FB650036112B /* SSFrameworkSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSFrameworkSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9A25AC2637FB650036112B /* SSFrameworkSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSFrameworkSDK.h; sourceTree = "<group>"; };
 		3F9A25AD2637FB650036112B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9A25B92637FBCA0036112B /* Haha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Haha.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +49,18 @@
 			isa = PBXGroup;
 			children = (
 				3F9A25AC2637FB650036112B /* SSFrameworkSDK.h */,
+				3F9A25B82637FBCA0036112B /* Source */,
 				3F9A25AD2637FB650036112B /* Info.plist */,
 			);
 			path = SSFrameworkSDK;
+			sourceTree = "<group>";
+		};
+		3F9A25B82637FBCA0036112B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A25B92637FBCA0036112B /* Haha.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +105,7 @@
 				TargetAttributes = {
 					3F9A25A82637FB650036112B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9A25BA2637FBCA0036112B /* Haha.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		3F9A25B22637FB650036112B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = linker.com.SSFrameworkSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		3F9A25B32637FB650036112B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
