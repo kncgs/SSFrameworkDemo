@@ -9,9 +9,9 @@ import Foundation
 
 public class HaHa {
     
-    init() {}
+    public init() {}
     
-    func ha() {
+    public func ha() {
         print("hahahahahh")
     }
 }
